@@ -12,9 +12,8 @@ export const People = () => {
     setLoading(true);
     getPeople()
       .then(setPeople)
-      .catch(error => {
+      .catch(() => {
         setErrorLoad('Something went wrong');
-        throw error;
       })
       .finally(() => {
         setLoading(false);

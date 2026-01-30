@@ -44,7 +44,7 @@ export const PeopleItem = ({
         {motherPerson ? (
           <PersonLink person={motherPerson} />
         ) : person.motherName ? (
-          <span className="has-text-danger">{person.motherName}</span>
+          <span>{person.motherName}</span>
         ) : (
           '-'
         )}
